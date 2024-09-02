@@ -1,6 +1,7 @@
 """
 Titanic - Machine Learning from Disaster.
 
+Script to get raw data from Kaggle API
 @Author James Laurence
 @Date August 25th, 2024
 """
@@ -54,8 +55,8 @@ def main(project_dir):
 
 
 if __name__ == '__main__':
-    # Getting root directory
-    project_dir = os.path.join(os.path.dirname(__file__), os.pardir, os.pardir)  # goes up 1 folder from script folder
+    # Getting root directory by going up 1 folder from src folder
+    project_dir = os.path.join(os.path.dirname(__file__), os.pardir, os.pardir)
 
     # Setup logger
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
